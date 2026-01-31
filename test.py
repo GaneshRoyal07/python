@@ -177,3 +177,31 @@ print(a is not c)
 age=18
 vote_status= "Can Vote" if age>=18 else "Cannot Vote"
 print(vote_status)
+
+#if statement
+a=15
+b=10
+if a>b:
+    print("a is greaterthan b")
+
+#if and else statement
+a=10
+b=7
+if a < b:
+    print("a is lessthan b")
+else:
+    print("a is greaterthan b")
+
+n= 23
+if n%2==0:
+    print("even")
+else:
+    print("odd")
+
+#nested if statement
+matches_won=10
+goals=22
+if matches_won>8:
+    if goals>20:
+        print("Hurray")
+    print("Winning")
