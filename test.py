@@ -87,3 +87,93 @@ print(c)
 a="Hi Ganesh"
 b=3
 print(a[b:])
+
+#arithmetic operators
+a=2
+b=3
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a**b)
+print(a//b)
+
+#relational operators
+a=10
+b=5
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+
+#assignment operator
+a=10
+a+=5
+print(a)
+a=10
+a-=5
+print(a)
+a=10
+a*=5
+print(a)
+a=10
+a/=5
+print(a)
+a=10
+a//=5
+print(a)
+a=10
+a**=5
+print(a)
+a=10
+a%=5
+print(a)
+a=10
+a&=5
+print(a)
+a=10
+a|=5
+print(a)
+a=10
+a^=5
+print(a)
+a=10
+a<<=5
+print(a)
+a=10
+a>>=5
+print(a)
+
+#logical operators
+a=True 
+b=False
+print(a and b)
+print( a or b)
+print(not a)
+
+#bitwise operators
+a=5
+b=3
+print(a&b)
+
+#membership operators
+my_list=[1,2,3,4,5]
+print(2 in my_list)
+print(10 in my_list)
+print(7 not in my_list)
+
+#identity operators 
+a=[1,2,3]
+b=a
+c=[1,2,3]
+print(a is b)
+print(a is c)
+print(a is not c)
+
+#ternary operator 
+age=18
+vote_status= "Can Vote" if age>=18 else "Cannot Vote"
+print(vote_status)
