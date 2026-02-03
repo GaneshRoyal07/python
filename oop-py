@@ -1,0 +1,81 @@
+#class
+class MyClass:
+    x=5
+print(MyClass)
+print(MyClass.x)
+
+class MyClass:
+    x=10
+p1=MyClass()
+print(p1.x)
+#object
+class student:
+    name="Ganesh"
+    age=21
+s1=student()
+print(s1.name,s1.age)
+
+#constructor
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+s1=Student("Ganesh",21)
+print(s1.name,s1.age)
+
+#Methods (function inside a class)
+class Student:
+    def __init__(self,name):
+        self.name=name
+    def greet(self):
+        print("Hello,",self.name)
+s1=Student("Ganesh")
+s1.greet()
+
+#Encapsulation (Data hiding)
+class Account:
+    def __init__(self,balance):
+        self.__balance=balance
+    def show_balance(self):
+        print(self.__balance)
+acc=Account(5000)
+acc.show_balance()
+
+#inheritance
+class Animal:
+    def sound(self):
+        print("Animal Sound")
+class Dog(Animal):
+    def bark(self):
+        print("Bark")
+class Cat(Dog):
+    def eat(self):
+        print("Eating")
+ani=Cat()
+ani.sound()
+ani.bark()
+ani.eat()
+
+#polymorphism
+class Bird:
+    def fly(self):
+        print("Bird flies")
+class Penguin(Bird):
+    def fly(self):
+        print("Penguin cannot fly")
+b=Bird()
+p=Penguin()
+b.fly()
+p.fly()
+        
+#abstract 
+from abc import ABC , abstractmethod
+class Vechicle(ABC):
+    @abstractmethod
+    def move(self):
+        pass
+class Car(Vechicle):
+    def move(self):
+        print("Car is moving")
+c=Car()
+c.move()
